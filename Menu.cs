@@ -56,7 +56,6 @@ namespace EditorHtml
       Console.Write("+");
       Console.Write("\n");
     }
-
     public static void WriteOptions()
     {
       Console.SetCursorPosition(3, 2);
@@ -71,16 +70,16 @@ namespace EditorHtml
       Console.WriteLine("2 - Abrir");
       Console.SetCursorPosition(3, 8);
       Console.WriteLine("0 - Sair");
-      Console.SetCursorPosition(3, 10);
+      Console.SetCursorPosition(3, 9);
       Console.Write("Opção: ");
+      
     }
-
     public static void HandleMenuOption(short option)
     {
       switch(option)
       {
         case 1:
-          Console.WriteLine("Editor");
+          Editor.Show();
           break;
         case 2:
           Console.WriteLine("View");
@@ -96,5 +95,7 @@ namespace EditorHtml
         
       }
     }
+
+
   }
 }
